@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Styles / 3 Sizes Media Queries  -->
+    <link rel="stylesheet" href="assets/css/stylesOLD.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 320px) and (max-width: 767px)"
+      href="assets/css/style-small.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px) and (max-width: 1023px)"
+      href="assets/css/style-middle.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1024px)"
+      href="assets/css/style-large.css" />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/9b08590b29.js"
+      crossorigin="anonymous"></script>
+
+    <title>Web Developer Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Isabella Windhaber</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!--
+      
+    <div class="parallax"></div>
+
+    <div style="height: 1000px; background-color: red; font-size: 36px">
+      Scroll Up and Down this page to see the parallax scrolling effect. This
+      div is just here to enable scrolling. Tip: Try to remove the
+      background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="parallax"></div>
+    -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="assets/img/me.png"
+        alt="bitmoji-isabella"
+        loading="lazy"
+        class="hero-img" />
+      <div class="bio">
+        <h2
+          class="bio-title text-center pb-4 animate__animated animate__fadeInLeft">
+          Hi, my name is Isabella
+        </h2>
+        <h2
+          class="bio-title text-center pb-4 animate__animated animate__fadeInRight">
+          and that's my Portfolio Website!
+        </h2>
+        <p class="bio-text"></p>
+      </div>
+    </section>
+
+    <!-- TIMELINE LEARNING & WORKING -->
+
+    <section class="timeline">
+      <div class="container border w-50">
+        <div class="timeline-left mt-4 mb-4">
+          <div class="left1 ms-5">
+            <h3>09/2012</h3>
+            <br />
+            <p>Vienna General Hospital</p>
+            <p>Emergency Department, Control Center</p>
+          </div>
+          <div class="left2 text-end me-5">
+            <h3>05/2022</h3>
+            <br />
+            <p>JavaScript Basic</p>
+            <p>at CodeFactory Vienna</p>
+          </div>
+          <div class="left3 ms-5">
+            <h3>09/2022</h3>
+            <br />
+            <p>Full Stack Development Class</p>
+            <p>at CodeFactory Vienna</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container border w-50">
+        <div class="timeline-left mt-4 mb-4">
+          <div class="container ps-5">
+            <h3>2021</h3>
+            <br />
+            <p>Start Self Study - How To Code</p>
+            <p>
+              <i class="fa-brands fa-html5"></i> HTML |
+              <i class="fa-brands fa-css3-alt"></i> CSS |
+              <i class="fa-brands fa-square-js"></i> JavaScript
+            </p>
+          </div>
+          <br />
+          <div class="container text-end pe-5">
+            <h3>08/2022</h3>
+            <br />
+            <p>SheCodes Basic Course</p>
+            <p>3 Weeks | 1 Project</p>
+            <span
+              ><a
+                href="https://www.shecodes.io/certificates/2e0789c954b2a84b7a11ceb7e7ba2a64">
+                Show Certificate</a
+              ></span
+            >
+          </div>
+          <br />
+          <div class="container ps-5">
+            <h3>09 - 12/2022</h3>
+            <br />
+            <p>Full Stack Development Course</p>
+            <p>Code Factory Vienna</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steckbrief -->
+    <section class="steckbried">
+      <div class="container d-flex justify-content-center mt-2 mb-2 pt-3">
+        <div class="card" style="width: 60rem">
+          <div class="w-100 d-flex d-flex align-items-center">
+            <div class="col-md-4">
+              <img
+                src="/assets/img/isi.jpg"
+                class="img-thumbnail"
+                alt="portfolio-pic"
+                id="photo" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <div class="container d-flex justify-content-between">
+                  <h5 class="card-title">Name:</h5>
+                  <h6 class="card-title">Isabella Windhaber</h6>
+                </div>
+                <br />
+                <div class="container d-flex justify-content-between">
+                  <h5 class="card-title">Based in:</h5>
+                  <h6 class="card-title">Vienna, Austria</h6>
+                </div>
+                <br />
+                <div class="container d-flex justify-content-between">
+                  <h5 class="card-title">Previous Job:</h5>
+                  <h6 class="card-title">Emergency Department, AKH</h6>
+                </div>
+                <br />
+
+                <div class="container d-flex justify-content-between">
+                  <h5 class="card-title">Right Now:</h5>
+                  <h6 class="card-title">
+                    Full Stack Development Class <br />
+                    - graduated 16.12.2022
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-2 my-2">
+            <hr />
+            <p class="card-title h4 d-flex">More About Me</p>
+            <br />
+            <p class="card-text d-flex" id="moore">
+              Okay, lets talk about me! I'm 28 years old and i just finished the
+              Full Stack Web Development Course at CodeFactory Vienna.
+              <br />
+              <br />
+              More or less one year ago i began to practise coding in my
+              freetime.
+              <br />
+              After some months of learning and practising the basics of HTML &
+              CSS
+              <br />
+              i noticed that it's time for the next step.
+              <br />
+              <br />
+              I read about a Full Stack Development course at CodeFoctory and
+              this opportunity seemed to be perfect, so i went for it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="animate__animated animate__pulse">
+          <img
+            src="assets/img/html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/css.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+        </div>
+
+        <div class="animate__animated animate__pulse">
+          <img
+            src="assets/img/bootstrap.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/Typescript.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/angular.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+        </div>
+
+        <div class="animate__animated animate__pulse">
+          <img
+            src="assets/img/sql.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/php.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+          <img
+            src="assets/img/sym.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/img/stern.png"
+            alt="SheCodes-Project"
+            loading="lazy"
+            class="project-pic" />
+          <h3 class="project-title">Sternzeichen</h3>
+          <p class="project-details">
+            The SheCode Basic Course was about HTML, CSS and JavaScript. It
+            ended with a project which should include the learned technologies.
+          </p>
+          <a
+            href="assets/projects/SheCodes/index.html"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+          <br />
+          <a
+            href="https://www.shecodes.io/certificates/2e0789c954b2a84b7a11ceb7e7ba2a64"
+            target="_blank"
+            class="certification-link"
+            >See the Certification</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="frontend-team-project"
+            loading="lazy"
+            class="project-pic" />
+          <h3 class="project-title">Frontend Team Project</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a
+            href="assets/projects/Frontend_Team_Project/Homepage/home.html"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/greenyEarth.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic" />
+          <h3 class="project-title">Coming Soon</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mdovneyb" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                w-100
+                w-100-cols="60"
+                w-100
+                w-100-cols="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="container mt-4 pt-4 socials">
+      <a
+        href="https://www.linkedin.com/in/isabella-windhaber-2691a9237/"
+        target="_blank"
+        ><img
+          src="assets/img/linkedin.svg"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon me-4 mt-4"
+      /></a>
+      <a href="https://github.com/Queeen520" target="_blank"
+        ><img
+          src="assets/img/github.png"
+          alt="Github"
+          loading="lazy"
+          class="socicon1 ms-2 me-2 mb-4"
+      /></a>
+      <a href="https://www.facebook.com/isabella.windhaber/" target="_blank"
+        ><img
+          src="assets/img/square-facebook.svg"
+          alt="Github"
+          class="socicon ms-4 mt-4"
+      /></a>
+    </div>
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a
+          href="https://www.linkedin.com/in/isabella-windhaber-2691a9237/"
+          target="_blank"
+          >Isabella W.</a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
